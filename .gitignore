@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+filas_estado.json
+ranking_estado.json
+blacklist_estado.json
+discloud.config
