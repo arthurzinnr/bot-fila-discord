@@ -9,8 +9,6 @@ from config import DISCORD_TOKEN
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("firefire_bot")
 
-# Intents necessárias: precisamos ver membros e conteúdo de mensagens
-# (se seu bot só usa slash commands e botões, message_content pode ficar False)
 intents = discord.Intents.default()
 intents.members = True
 
@@ -29,7 +27,7 @@ async def on_ready():
 
 async def main():
     async with bot:
-        # Carrega os cogs (módulos de funcionalidades)
+       
         await bot.load_extension("cogs.fila_cog")
         await bot.load_extension("cogs.ranking_cog")
         await bot.load_extension("cogs.blacklist_cog")
