@@ -11,19 +11,14 @@ import logs_util
 import permissoes
 import ranking
 
-# ==== PERSONALIZAÇÃO DO EMBED ====
-# Título padrão (pode ser sobrescrito em runtime via /configurar)
+
 TITULO_EMBED_PADRAO = "🏆 | Bora de AP, hein?"
-# Caminho da imagem que aparece do lado direito do embed (coloque o arquivo em assets/)
 CAMINHO_IMAGEM = os.path.join(os.path.dirname(os.path.dirname(__file__)), "assets", "capa.jpg")
 NOME_ARQUIVO_IMAGEM = "capa.jpg"
-# ===================================
 
-# Quantidade fixa de vagas por fila (2 representantes: um de cada lado)
 VAGAS_POR_FILA = 2
 
-# Registro de todas as partidas ativas na memória, indexado pelo ID da mensagem do embed.
-# É a partir daqui que salvamos e restauramos o estado no arquivo JSON.
+
 PARTIDAS_ATIVAS: dict[int, "FilaView"] = {}
 
 
