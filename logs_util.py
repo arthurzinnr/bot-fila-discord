@@ -18,5 +18,5 @@ async def enviar_log(guild: discord.Guild, mensagem: str | None = None, embed: d
     try:
         await canal.send(content=mensagem, embed=embed)
     except discord.Forbidden:
-        # Bot perdeu permissão de enviar mensagem nesse canal — ignora silenciosamente
+        
         pass
