@@ -5,9 +5,8 @@ CAMINHO_ARQUIVO = "config_estado.json"
 
 _PADRAO = {
     "mediador_role_id": None,
-    "titulo_embed": None,  # None = usa o padrão definido no código
-    "log_channel_id": None,  # canal onde os eventos (partida, ticket, blacklist) são registrados
-}
+    "titulo_embed": None,  
+    "log_channel_id": None,  
 
 
 def carregar() -> dict:
